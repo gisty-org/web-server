@@ -47,7 +47,7 @@ class AuthController extends Controller
     }
 
     public function login(Request $request){
-        
+        echo \getcwd();
         $user = User::where('email',$request->input('email'))->first();
         if(!$user){
             return response()->json([
