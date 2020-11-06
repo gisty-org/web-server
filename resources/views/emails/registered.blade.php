@@ -11,7 +11,7 @@
             <table align="center" bgcolor="#ffffff" cellpadding="0" cellspacing="0" width="400" style="border-collapse: collapse; margin-top: 20px; margin-bottom: 20px;">
                 <tr>
                     <td align="center" style="padding: 40px 0 30px 0; background: linear-gradient(135deg, #667eea 0%, #764ba2 100%)">
-                        <h1 style="color: white;">Welcome to Gitsy!</h1>
+                        <h1 style="color: white;">Welcome to Gisty!</h1>
                     </td>
                 </tr>
                 <tr>
@@ -24,7 +24,7 @@
                             </tr>
                             <tr>
                                 <td style="padding: 20px 0 30px 0;">
-                                    <p style="margin: 0;">Thank you for using Gitsy. Below are the details of the account created - </p>
+                                    <p style="margin: 0;">Thank you for using Gisty. Below are the details of the account created - </p>
                                 </td>
                             </tr>
                             <tr>
@@ -38,7 +38,7 @@
                             <tr>
                                 <td style="padding: 20px 0 30px 0;">
                                     <p style="margin: 0;">Regards,</p>
-                                    <p style="margin: 0;">Team Gitsy</p>
+                                    <p style="margin: 0;">Team Gisty</p>
                                 </td>
                             </tr>
                         </table>
