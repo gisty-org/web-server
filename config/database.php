@@ -75,7 +75,7 @@ return [
             'url' => env('DATABASE_URL'),
             'host' => env('DB_HOST', $host),
             'port' => env('DB_PORT', '5432'),
-            'database' => env('DB_DATABASE', database),
+            'database' => env('DB_DATABASE', $database),
             'username' => env('DB_USERNAME', $username),
             'password' => env('DB_PASSWORD', $password),
             'charset' => 'utf8',
