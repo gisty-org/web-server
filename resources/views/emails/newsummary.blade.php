@@ -24,7 +24,7 @@
                             </tr>
                             <tr>
                                 <td style="padding: 20px 0 30px 0;">
-                                    <p style="margin: 0;">Your new summary successfully created. Below are the details - </p>
+                                    <p style="margin: 0;">Your new summary was successfully created. Below are the details - </p>
                                 </td>
                             </tr>
                             <tr>

@@ -24,7 +24,7 @@
                             </tr>
                             <tr>
                                 <td style="padding: 20px 0 30px 0;">
-                                    <p style="margin: 0;">We received a password reset request from you at <strong>{{ $time }}</strong>. Enter the otp below to verify this request.</p>
+                                    <p style="margin: 0;">We have received a password reset request from you at <strong>{{ $time }}</strong>. Enter the otp below to verify this request.</p>
                                 </td>
                             </tr>
                             <tr>
