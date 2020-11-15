@@ -5,6 +5,7 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\AuthController;
 use App\Http\Controllers\SummaryController;
 use App\Http\Controllers\SnapshotController;
+use App\Http\Controllers\UserController;
 
 
 /*
@@ -39,3 +40,7 @@ Route::post('/summaries/share',[SummaryController::class,'share']);
 Route::delete('/summaries/{summaryId}', [SummaryController::class,'destroy']);
 
 Route::delete('/summaries/{summaryId}/snapshots/{snapshotId}',[SnapshotController::class,'destroy']);
+
+Route::get('/profile/{id}/edit',[UserController::class,'getProfile']);
+
+Route::put('/profile/{id}',[UserController::class,'editProfile']);
