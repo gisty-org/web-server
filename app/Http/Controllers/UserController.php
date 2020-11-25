@@ -22,7 +22,8 @@ class UserController extends Controller
                 "userId" => $user->id,
                 "fullname" => $user->fullname,
                 "email" => $user->email,
-                "contact" => $user->contact
+                "contact" => $user->contact,
+                "profile" => $user->profile
             ]
         ],200);
     }
@@ -46,6 +47,7 @@ class UserController extends Controller
         $user->fullname = $request->input('fullName');
         $user->email = $request->input('email');
         $user->contact = $request->input('contact');
+        $user->profile = $request->input('profile');
         $user->save();
 
 
@@ -55,7 +57,8 @@ class UserController extends Controller
                 "userId" => $user->id,
                 "fullname" => $user->fullname,
                 "email" => $user->email,
-                "contact" => $user->contact
+                "contact" => $user->contact,
+                "profile" => $user->profile
             ]
         ],200);
     }

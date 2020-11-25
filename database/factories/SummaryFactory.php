@@ -27,7 +27,7 @@ class SummaryFactory extends Factory
                 "SE","AI","CC","CN","IoT","OSC"
             ]),
             'title' => $this->faker->safeColorName,
-            'content' => $this->faker->realText($maxNbChars = 5000),
+            'content' => $this->faker->realText($maxNbChars = 2000),
             'user_id' => $this->faker->numberBetween($min=1, $max=2)
         ];
     }

@@ -18,12 +18,14 @@ use App\Mail\PasswordChanged;
 class AuthController extends Controller
 {
     public function register(Request $request){
+
         try{
             $user = User::create([
                 "fullname" => $request->input('fullname'),
                 "email" => $request->input('email'),
                 "contact" => $request->input('contact'),
-                "password" => Hash::make($request->input('password'))
+                "password" => Hash::make($request->input('password')),
+                "profile" => $request->input('profile')
             ]);
         }
         catch(QueryException $e){
@@ -32,15 +34,18 @@ class AuthController extends Controller
             ],403);
         }
 
-        Mail::to($user->email)->send(new SuccessfullyRegistered($user));
-
+        if(!env('APP_DEBUG')){
+            Mail::to($user->email)->send(new SuccessfullyRegistered($user));
+        }
+        
         return response()->json([
             "msg" => "Successfully Registered",
             "user" => [
                 "userId" => $user->id,
                 "fullname" => $user->fullname,
                 "email" => $user->email,
-                "contact" => $user->contact
+                "contact" => $user->contact,
+                "profile" => $user->profile,
             ]
         ],200);   
              
@@ -61,7 +66,8 @@ class AuthController extends Controller
                     "userId" => $user->id,
                     "fullname" => $user->fullname,
                     "email" => $user->email,
-                    "contact" => $user->contact
+                    "contact" => $user->contact,
+                    "profile" => $user->profile,
                 ]
             ],200);
         }else{
